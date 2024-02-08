@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Short URL Generated</title>
+</head>
+<body>
+<h2>Short URL Generated</h2>
+<p>Long URL: <span th:text="${longURL.longURL}"></span></p>
+<p>Short URL: <a th:href="${shortURL}" th:text="${shortURL}"></a></p>
+</body>
+</html>

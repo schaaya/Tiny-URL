@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Generate Short URL</title>
+</head>
+<body>
+<h2>Generate Short URL</h2>
+<form action="#" th:action="@{/generate}" th:object="${longURL}" method="post">
+  <label for="longURL">Long URL:</label>
+  <input type="text" id="longURL" th:field="*{longURL}" required>
+  <button type="submit">Generate</button>
+</form>
+</body>
+</html>
